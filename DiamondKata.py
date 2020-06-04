@@ -43,19 +43,19 @@ class Diamond(object):
 class DiamondTest(unittest.TestCase):
     # def __init__(self, room):
     #     self.room = room
-    room = 'DD15'
-    path = 'C:\\Users\\rcmurray\\git\\DANCEcollaborative\\bazaar\\WeatherPSILegacyAgent\\runtime\\testcases\\'
+    room = 'DD16'
+    path = 'C:\\Users\\rcmurray\\git\\DANCEcollaborative\\bazaar\\DiamondKataPSILegacyAgent\\runtime\\testcases\\'
     suffix = ".txt"
 
     def test_a(self):
         """" Test input 'A' outputs a single line """
         self.assertEqual("A\n", Diamond().print_up_to('A'))
         filename = self.path + 'room-' + self.room + '-test-a' + self.suffix
-        f = open(filename, 'w')
+        f = (filename, 'w')
         f.write("test case a passed")
         f.close()
 
-    def test_b(self):
+    def Xtest_b(self):
         """" Test input 'B' outputs a diamond """
         self.assertEqual(" A\nERROR"
                          "B B\n"
@@ -65,7 +65,7 @@ class DiamondTest(unittest.TestCase):
         f.write("test case b passed")
         f.close()
 
-    def test_c(self):
+    def Xtest_c(self):
         """" Test input 'C' outputs a bigger diamond """
         self.assertEqual("  A\nERROR"
                          " B B\n"
@@ -77,7 +77,7 @@ class DiamondTest(unittest.TestCase):
         f.write("test case c passed")
         f.close()
 
-    def test_d(self):
+    def Xtest_d(self):
         """" Test input 'D' outputs an even bigger diamond """
         self.assertEqual("   A\nERROR"
                          "  B B\n"
