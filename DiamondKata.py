@@ -51,7 +51,7 @@ class DiamondTest(unittest.TestCase):
         """" Test input 'A' outputs a single line """
         self.assertEqual("A\n", Diamond().print_up_to('A'))
         filename = self.path + 'room-' + self.room + '-test-a' + self.suffix
-        f = (filename, 'w')
+        f = open(filename, 'w')
         f.write("test case a passed")
         f.close()
 
